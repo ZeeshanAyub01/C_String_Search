@@ -1,0 +1,45 @@
+Student Name: Muhammad Zeeshan Ayub,
+Student Id: 0994442,
+Course: CIS*3490
+Assignment # 3
+
+How compile and run the program:
+
+To compile the program, type 'make' on the console. That will compile the program, and produce an executable file called 'run'. 
+To run type './run' on the console.When the program runs, it will ask the user what program they want to run, and the user can 
+select the program by entering the corresponding number. If the the user enters a wrong number they will be prompted to make 
+a valid entry again, and but if they make a correct entry, the program will run the relevant functions, display the output and 
+then exit.
+
+NOTE: THE NAMES OF THE FILES HAVE BEEN HARDCODED IN THE PROGRAM, because different methods were used to read them. Incase of a 
+problem please contact the author of the code at: ayubm@uoguelph.ca. If the files are not included in the same folder,
+that will result in an error.
+
+Analysis and comparison for Horspool's and Boyer-Moore's:
+
+The two algorithms resemble in their method of operation, but Horspool is simpler than Boyer-Moore, because it
+simply shifts based on the last character, whereas the Boyer-Moore algorithm shifts based on the first mismatched
+character, and the repetition of the matched suffix in the pattern. In carrying out the testing I found that both
+algorithms were quite reliable and efficient. However, a closer look at the two algorithms would reveal that the 
+Boyer-Moore usually results in more comparison operations taking place, so it takes more time. However, Boyer-Moore
+has the effect of fewer total shift operations taking place, because it takes into consideration the repetition of the
+suffix in the pattern. We tried out the algorithms using the following input patterns:
+
+Amendment
+Chapter
+Calendar
+diplomas
+Universities
+Ministry
+Algonquin
+Points
+Recommendations 
+
+We obtained the following results: 
+
+Average shifts per time (in milliseconds) ratio for Horspool: 4.99,
+Average shifts per time (in millisecods) ratio for Boyer-Moore: 4.94.
+
+Although, the results for the two algortihms are not very far apart, we can observe that the Horspool algorithm is
+slightly more efficient than Boyer-Moore. That is because the total number of operations is usually fewer. Both algorithms
+can be considered to be O(nlogn).
