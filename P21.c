@@ -1,7 +1,6 @@
 /*
 Student Name: Muhammad Zeeshan Ayub,
 Student Id: 0994442,
-Course: CIS*3490
 Assignment # 3
 Date: 03/11/2019
 Brute Force String Search
