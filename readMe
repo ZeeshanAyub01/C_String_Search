@@ -1,6 +1,15 @@
 Student Name: Muhammad Zeeshan Ayub,
 Student Id: 0994442,
 
+Oveview of the program:
+This program contains various string-search algorithms coded in C. The .c files are named according to the question numbers in the assignment, but their contents are bulleted below:
+=> P11.c: The brute-force search method to find all the anagrams of a string,
+=> P12.c: Finding all the anagrams of a string after pre-sorting,
+=> P21.c: The brute-force string-search method to find all the instances of a string in a given text,
+=> P21.c: The Horspool algorithm to find all the instances of a string in a given text,
+=> P21.c: The Boyer's-Moore algorithm to find all the instances of a string in a given text
+=> main.c: The main function, and verifyChoice() to return a corresponding number based on user's choice of the algorithm tey wish to view.
+
 How compile and run the program:
 
 To compile the program, type 'make' on the console. That will compile the program, and produce an executable file called 'run'. 
@@ -9,9 +18,12 @@ select the program by entering the corresponding number. If the the user enters 
 a valid entry again, and but if they make a correct entry, the program will run the relevant functions, display the output and 
 then exit.
 
-NOTE: THE NAMES OF THE FILES HAVE BEEN HARDCODED IN THE PROGRAM, because different methods were used to read them. 'data_4.txt' 
+*NOTE: THE NAMES OF THE FILES HAVE BEEN HARDCODED IN THE PROGRAM, because different methods were used to read them. 'data_4.txt' 
 (used for problems 11 and 12) is read in word by word, with each word stored in an array; whereas 'data_5.txt' (used for problems 
-21, 22 and 23) was read into a single string. Incase of any questions please contact the author of the code at: ayubm@uoguelph.ca. 
+21, 22 and 23) was read into a single string. If the user wishes to use different input files, their names can be changed in main.c
+where the data files have been written.
+
+Incase of any questions please contact the author of the code at: ayubm@uoguelph.ca. 
 If the files are not included in the same folder, that will result in an error.
 
 Analysis and comparison for Horspool's and Boyer-Moore's:
